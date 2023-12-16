@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*---left side---*/
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    appearance: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background-color: #f6f6f9;
+}
+
+.container {
+    display: grid;
+    gap: 1.8rem;
+    width: 96%;
+    margin: auto;
+    grid-template-columns: 14rem auto 14rem;
+}
+
+a {
+    color: aqua;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+aside {
+    height: 100vh;
+}
+
+aside .top {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+}
+
+aside .logo .tittle{
+    font-family: 'Mr Dafoe', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+aside .top .close {
+    display: none;
+}
+
+aside .sidebar {
+    background-color: white;
+    height: 92vh;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+    padding-top: 3rem;
+}
+
+aside h3 {
+    font-weight: 400;
+}
+
+aside .sidebar a {
+    display: flex;
+    margin-left: 1.5rem;
+    gap: 1.5rem;
+    align-self: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+    color: gray;
+
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+}
+
+aside .sidebar a:hover {
+    color: aquamarine;
+}
+
+aside .sidebar a:hover span {
+    margin-left: 1rem;
+}
+
+
+/*---main body---*/
+
+
+main {
+    margin-top: 1.4rem;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: grey;
+}
+
+main .date {
+    display: inline-block;
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+.insight {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.user {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.user:hover {
+    color: aquamarine;
+}
+
+/* .user:hover span {
+    margin-left: 1rem;
+} */
+
+.Active {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.Active:hover {
+    color: aquamarine;
+}
+
+.Deactive {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.Deactive:hover {
+    color: aquamarine;
+}
+
+main .insight>div span {
+    background-color: gray;
+    border-radius: 50px;
+    color: white;
+    padding: 0.2rem;
+}
+
+main .recent_user {
+    margin-top: 2rem;
+}
+
+main .recent_user h2 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+main .recent_user table {
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    transition: all .3s ease;
+    color: black;
+}
+
+main .recent_user table:hover {
+    box-shadow: none;
+}
+
+main table tbody tr {
+    height: 1.8rem;
+    border-bottom: 1px solid white;
+}
+
+main table tbody td {
+    height: 1.8rem;
+    border-bottom: 1px solid black;
+}
+
+/* main table tbody tr:last-child td{
+border: none;
+} */
+
+
+/*--right Side---*/
+
+
+.photo img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.text_muted {
+    color: black;
+}
+
+.right {
+    margin-top: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme-toggle {
+    background-color: white;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 1.6rem;
+    width: 4.2rem;
+    display: flex;
+    border-radius: 20px;
+}
+
+.right .theme-toggle span {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .theme-toggle span.active {
+    color: rgb(211, 204, 190);
+}
+
+.right .top .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right .recent_updates {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+}
+
+.right .recent_updates .updates {
+    background-color: white;
+    transition: all .3s ease;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px;
+    height: 80vh;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.right .recent_updates .update {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2.6rem auto;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+}
+
+.right .recent_updates .update:hover {
+    color: aquamarine;
+}
+
+.right .recent_updates .update:hover {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 14rem;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main.insight {
+        display: grid;
+        grid-template-columns: repeat();
+    }
+}
